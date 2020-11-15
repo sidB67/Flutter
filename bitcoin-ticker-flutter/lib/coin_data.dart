@@ -1,3 +1,6 @@
+
+import 'dart:convert';
+import 'package:http/http.dart';
 const List<String> currenciesList = [
   'AUD',
   'BRL',
@@ -28,4 +31,28 @@ const List<String> cryptoList = [
   'LTC',
 ];
 
-class CoinData {}
+const apiKey = 'e33280663cf7232795e4';
+class CoinData {
+
+  Future  getPrice(String coin, String cont)async{
+    String RequestUrl = 'https://free.currconv.com/api/v7/convert?q=${coin}_$cont&compact=ultra&apiKey=e33280663cf7232795e4';
+    Response response = await get(RequestUrl);
+    if(response.statusCode==200) {
+      var decodedData = jsonDecode(response.body);
+      double price = decodedData['${coin}_$cont'];
+      if(price!=null) {
+        return price.toStringAsFixed(0);
+      }
+      else
+        return '0';
+    }
+    else{
+      print(response.statusCode);
+      throw 'Problem With Getting Request';
+    }
+
+  }
+
+
+}
+
