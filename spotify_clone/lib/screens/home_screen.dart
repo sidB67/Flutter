@@ -7,9 +7,21 @@ import 'package:spotify_clone/tile.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    int changeScreen(int a){
+      if(a==0){
+        Navigator.pushNamed(context, 'home');
+
+      }
+      else if(a==1){
+        Navigator.pushNamed(context, 'search');
+      }
+    }
     return Scaffold(
       backgroundColor: Color(0xff141414),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (int n){
+          changeScreen(n);
+        },
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
         currentIndex: 0,

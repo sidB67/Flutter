@@ -1,11 +1,49 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/const.dart';
-
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class Search extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
+    int changeScreen(int a){
+    if(a==0){
+      Navigator.pushNamed(context, 'home');
+    }
+    else if(a==1){
+      Navigator.pushNamed(context, 'search');
+    }
+  }
     return Scaffold(
         backgroundColor: Color(0xff141414),
+        bottomNavigationBar: BottomNavigationBar(
+          onTap: (int n){
+            changeScreen(n);
+          },
+          backgroundColor: Color(0xff141414) ,
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.grey,
+          currentIndex: 1,
+          items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(FontAwesomeIcons.music),
+            label: 'Your Library',
+          ),
+          // BottomNavigationBarItem(
+            
+          //   icon: Icon(FontAwesomeIcons.spotify,color:  Color(0xff141414),),
+          //   label: 'Your Library',
+          // ),
+        ],
+
+        ),
         body: Padding(
           padding: const EdgeInsets.symmetric(
             horizontal: 16.0,
