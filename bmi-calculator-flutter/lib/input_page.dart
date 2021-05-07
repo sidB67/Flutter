@@ -76,7 +76,7 @@ class _InputPageState extends State<InputPage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    // crossAxisAlignment: CrossAxisAlignment.baseline,
                     children: [
                       Text(
                         height.toString(),
@@ -230,7 +230,7 @@ class _InputPageState extends State<InputPage> {
 class RoundIconButton extends StatelessWidget {
   RoundIconButton({@required this.icon, @required this.press});
   final IconData icon;
-  Function press;
+  final Function press;
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(

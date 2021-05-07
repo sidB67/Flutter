@@ -9,7 +9,7 @@ class MlApp extends StatefulWidget {
 }
 
 class _MlAppState extends State<MlApp> {
-  String result;
+  String result='';
   File pickedImage;
   var imageFile;
   bool isImageLoaded = false;
@@ -18,7 +18,7 @@ class _MlAppState extends State<MlApp> {
     setState(() {
       pickedImage = File(tempStore.path);
       isImageLoaded = true;
-      result = '';
+      // result = '';
     });
   }
 
@@ -61,10 +61,11 @@ class _MlAppState extends State<MlApp> {
                   fit: BoxFit.cover,
                 ),
               ),
+             
             ),
           ) : Container(),
-          SizedBox(height:40.0),
-          Text(result),
+           SizedBox(height:40.0),
+                Text(result),
         ],
         ),
     );

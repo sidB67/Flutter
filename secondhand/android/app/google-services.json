@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "56888228307",
+    "project_id": "flash-chat-6f4a9",
+    "storage_bucket": "flash-chat-6f4a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56888228307:android:e6d27c21060fee841bd726",
+        "android_client_info": {
+          "package_name": "com.example.secondhand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56888228307-pk2q87g5v30lmk2ttbq8bgcvtk5gsmac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjM2Uo2j7nSlX6Zd1dXnU173MMDXzFDdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56888228307-pk2q87g5v30lmk2ttbq8bgcvtk5gsmac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56888228307:android:dfd4f2304c4456451bd726",
+        "android_client_info": {
+          "package_name": "com.sidb.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56888228307-pk2q87g5v30lmk2ttbq8bgcvtk5gsmac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjM2Uo2j7nSlX6Zd1dXnU173MMDXzFDdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56888228307-pk2q87g5v30lmk2ttbq8bgcvtk5gsmac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

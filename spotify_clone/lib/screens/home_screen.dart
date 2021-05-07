@@ -106,7 +106,7 @@ class HomeScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 20, 0, 10),
             child: Text(
-                    'Recently Played',
+                    'Recently Playe',
                     style: kHomeStyle,
                   ),
           ),
